@@ -28,5 +28,4 @@ jobs:
 
     # Run the POSTMAN collection
     - name: Run POSTMAN collection
-      run: |
-       newman run RestfulBookerBVT.postman_collection.json -e Production.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
+      run: newman run RestfulBookerBVT.postman_collection.json -e Production.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
